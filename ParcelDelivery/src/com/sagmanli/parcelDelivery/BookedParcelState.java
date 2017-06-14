@@ -1,6 +1,6 @@
 package com.sagmanli.parcelDelivery;
 
-public class BookedParcelState implements IParcelState {
+public class BookedParcelState implements ParcelState {
 	
 	private Parcel parcel;
 	
@@ -10,7 +10,7 @@ public class BookedParcelState implements IParcelState {
 
 	@Override
 	public void book() throws Exception {
-		throw new Exception("Already Booked");
+		throw new IllegalParcelStateException("Already Booked");
 
 	}
 

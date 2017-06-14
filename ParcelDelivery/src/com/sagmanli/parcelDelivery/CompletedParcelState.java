@@ -1,6 +1,6 @@
 package com.sagmanli.parcelDelivery;
 
-public class CompletedParcelState implements IParcelState{
+public class CompletedParcelState implements ParcelState{
 
 	private Parcel parcel;
 	

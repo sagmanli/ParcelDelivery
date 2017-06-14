@@ -1,14 +1,14 @@
 package com.sagmanli.parcelDelivery;
 
 public class Parcel {
-	IParcelState newState;
-	IParcelState bookedState;
-	IParcelState transitState;
-	IParcelState completedState;
+	ParcelState newState;
+	ParcelState bookedState;
+	ParcelState transitState;
+	ParcelState completedState;
 	
 	private String orderId;
 	
-	private IParcelState state;
+	private ParcelState state;
 	
 	public Parcel(String orderId){
 		this.orderId = orderId;
@@ -31,35 +31,35 @@ public class Parcel {
 		this.state.complete();
 	}
 
-	public IParcelState getNewState() {
+	public ParcelState getNewState() {
 		return newState;
 	}
 
-	public void setNewState(IParcelState newState) {
+	public void setNewState(ParcelState newState) {
 		this.newState = newState;
 	}
 
-	public IParcelState getBookedState() {
+	public ParcelState getBookedState() {
 		return bookedState;
 	}
 
-	public void setBookedState(IParcelState bookedState) {
+	public void setBookedState(ParcelState bookedState) {
 		this.bookedState = bookedState;
 	}
 
-	public IParcelState getTransitState() {
+	public ParcelState getTransitState() {
 		return transitState;
 	}
 
-	public void setTransitState(IParcelState transitState) {
+	public void setTransitState(ParcelState transitState) {
 		this.transitState = transitState;
 	}
 
-	public IParcelState getCompletedState() {
+	public ParcelState getCompletedState() {
 		return completedState;
 	}
 
-	public void setCompletedState(IParcelState completedState) {
+	public void setCompletedState(ParcelState completedState) {
 		this.completedState = completedState;
 	}
 
@@ -71,11 +71,11 @@ public class Parcel {
 		this.orderId = orderId;
 	}
 
-	public IParcelState getState() {
+	public ParcelState getState() {
 		return state;
 	}
 
-	public void setState(IParcelState state) {
+	public void setState(ParcelState state) {
 		this.state = state;
 	}
 	

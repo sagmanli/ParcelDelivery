@@ -1,6 +1,6 @@
 package com.sagmanli.parcelDelivery;
 
-public class NewParcelState implements IParcelState {
+public class NewParcelState implements ParcelState {
 
 	private Parcel parcel;
 	
@@ -17,13 +17,13 @@ public class NewParcelState implements IParcelState {
 
 	@Override
 	public void makeTransit() throws Exception {
-		throw new Exception("Can't switch to transit, can only switch to Booked");
+		throw new IllegalParcelStateException("Can't switch to transit, can only switch to Booked");
 
 	}
 
 	@Override
 	public void complete() throws Exception {
-		throw new Exception("Can't switch to complete, can only switch to Booked");
+		throw new IllegalParcelStateException("Can't switch to complete, can only switch to Booked");
 
 	}
 
